@@ -1,5 +1,19 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   color: #171d25;
+}
+
+nav.bg-dark {
+  background-color: #171d25 !important;
+}
+
+.navbar-collapse.collapsing .nav-links-collapse .nav-link {
+  border-bottom: 1px solid #ddd; /* Ajuste a cor e a espessura conforme necessário */
+}
+
+/* Remove o border-bottom quando o menu não está colapsado */
+.navbar-collapse.show .nav-links-collapse .nav-link {
+  border-bottom: none;
 }/*# sourceMappingURL=style.css.map */
