@@ -18,3 +18,14 @@ nav.bg-dark{
 .navbar-collapse.show .nav-links-collapse .nav-link {
   border-bottom: none;
 }
+
+#nav-secundaria{
+  background-image: linear-gradient(90deg, #3B6491, #0F216E);
+  a{
+    color: white;
+    background-color: transparent;
+    &:hover {
+     background: linear-gradient(90deg, rgba(33, 162, 255, 0.25) 0%, rgba(33, 162, 255, 0.15) 50%, rgba(50, 50, 51, 0) 100%);
+    }
+  }
+}
