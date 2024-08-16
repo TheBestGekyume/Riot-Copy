@@ -1,14 +1,3 @@
-$navbar-dark-color:                 #171d25;
-$navbar-dark-hover-color:           rgba($white, .75);
-$navbar-dark-active-color:          #171d25;
-$navbar-dark-disabled-color:        rgba($white, .25);
-$navbar-dark-icon-color:            $navbar-dark-color;
-$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-$navbar-dark-toggler-border-color:  rgba($white, .1);
-$navbar-dark-brand-color:           #171d25;
-$navbar-dark-brand-hover-color:     $navbar-dark-active-color;
-
-
 * {
     padding: 0;
     margin: 0;
@@ -17,3 +6,15 @@ $navbar-dark-brand-hover-color:     $navbar-dark-active-color;
     color: #171d25;
 }
 
+nav.bg-dark{
+    background-color: #171d25 !important;
+}
+
+.navbar-collapse.collapsing .nav-links-collapse .nav-link {
+  border-bottom: 1px solid #ddd; /* Ajuste a cor e a espessura conforme necessário */
+}
+
+/* Remove o border-bottom quando o menu não está colapsado */
+.navbar-collapse.show .nav-links-collapse .nav-link {
+  border-bottom: none;
+}
