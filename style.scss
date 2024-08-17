@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 200px;
+  height: 200px;
+
+  img.background-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    // -o-object-fit: cover;
+    // object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+  }
+
+  img.valorant-logo {
+    width: 215px;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  .btn {
+    background: linear-gradient(135deg, #ff3342 0%, #ff7d66 50%, #ff7d66 100%);
+    color: white;
+    border: 0 solid transparent;
+    border-radius: 12px;
+
+    &:hover {
+      color: white;
+      box-shadow: 0 10px 30px -10px #ff465440,
+        0 10px 30px -10px #ff465480,
+        0 10px 35px -10px #ff465480;
+    }
+
+    span{
+      text-align: center;
+      background-color: black;
+    width: 16px;
+    height: 16px;
+
+    svg {
+      
+      width: 16px;
+    height: 16px;
+    }
+  }
+
+  }
+
+}
