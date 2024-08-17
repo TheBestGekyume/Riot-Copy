@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -45,3 +46,53 @@ header .btn span svg {
   width: 16px;
   height: 16px;
 }/*# sourceMappingURL=style.css.map */
+=======
+body {
+  background-color: #121212; /* Cor de fundo escura */
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #000000; /* Fundo preto para a navbar */
+}
+
+.navbar-brand img {
+  width: 120px; /* Ajuste o tamanho do logotipo */
+}
+
+svg {
+  fill: white;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #dddddd; /* Cor ao passar o mouse */
+}
+
+
+.btn-login {
+  background-color: #e52626; /* Cor vermelha para o botão de login */
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 1.6rem;
+}
+
+.btn-login:hover {
+  background-color: #c41f1f; /* Cor ao passar o mouse */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+>>>>>>> ad36d61a4317228222fa516116d6cf4b0a95e24d
