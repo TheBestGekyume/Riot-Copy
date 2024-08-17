@@ -44,7 +44,7 @@ body .navbar-toggler:focus {
   box-shadow: none;
 }
 body header {
-  margin-top: 100px;
+  margin-block: 100px;
 }
 body header::after {
   content: "";
@@ -56,40 +56,48 @@ body header::after {
   background: linear-gradient(275deg, rgba(10, 10, 10, 0) 0, rgba(10, 10, 10, 0.8) 120%);
   z-index: -1;
 }
-body header img.background-header {
+body header .background-header, body header .background-header-desk {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
 }
-body img.valorant-logo {
+body header .background-header-desk {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+body header img.valorant-logo {
   width: 215px;
 }
-body h2 {
+body header h2 {
   color: #fff;
   font-size: 1.688rem;
   font-weight: 700;
 }
-body .btn {
+body header h5 {
+  color: rgba(249, 249, 249, 0.6);
+}
+body header .btn {
   background: linear-gradient(135deg, #ff3342 0%, #ff7d66 50%, #ff7d66 100%);
   color: white;
   border: 0 solid transparent;
   border-radius: 18px;
 }
-body .btn:hover {
+body header .btn:hover {
   color: white;
   box-shadow: 0 10px 30px -10px rgba(255, 70, 84, 0.2509803922), 0 10px 30px -10px rgba(255, 70, 84, 0.5019607843), 0 10px 35px -10px rgba(255, 70, 84, 0.5019607843);
 }
-body .btn h3 {
+body header .btn h3 {
   font-size: 1.5rem;
   font-weight: 700;
 }
-body .btn span {
+body header .btn span {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
@@ -100,7 +108,7 @@ body .btn span {
   background-color: #000;
   filter: drop-shadow(0 4px 3px rgba(10, 10, 10, 0.4));
 }
-body .btn span svg {
+body header .btn span svg {
   width: 16px;
   height: auto;
 }/*# sourceMappingURL=style.css.map */
