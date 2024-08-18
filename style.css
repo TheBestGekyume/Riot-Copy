@@ -130,18 +130,17 @@ body header .btn span svg {
 
 .novidades-left {
   display: flex;
-  justify-content: space-between; /* Posiciona o título e o botão nas extremidades opostas */
-  align-items: center; /* Alinha os itens verticalmente no centro */
-  width: 100%; /* Garante que o contêiner ocupe a largura total */
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
 }
 
 .novidades-left h2 {
   color: #f9f9f9;
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center; /* Centraliza o texto dentro do h2 */
-  flex: 1; /* Permite que o título ocupe espaço disponível */
+  margin-bottom: 20px; 
+  flex: 1; 
 }
 
 .button {
