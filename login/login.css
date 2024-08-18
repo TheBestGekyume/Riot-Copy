@@ -5,14 +5,17 @@
 }
 
 body {
+  display: grid;
+  background-repeat: no-repeat !important;
+  height: 100%;
   background: url(https://lolstatic-a.akamaihd.net/rso-authenticator-ui/0.68.48/assets/arcane_mobile_default_BG_2x.jpg);
-}
-body header {
-  width: 100vw;
+  box-shadow: inset 0px -104px 100px -55px rgba(0, 0, 0, 0.83);
 }
 body section {
   background-color: #fff;
-  width: 85vw;
+  width: 95vw;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 body section form h1 {
   font-weight: 700;
@@ -29,9 +32,154 @@ body section form input.form-control:hover {
   background-color: rgba(0, 0, 0, 0.1529411765);
 }
 body section form label {
-  color: rgb(102, 102, 102);
+  color: #666;
   font-weight: 800;
   font-size: 12px;
   outline: 0 !important;
   border: 0 !important;
+}
+body section .form-check-input {
+  width: 34px;
+  height: 33px;
+  transition: 100ms;
+  background-color: rgba(10, 10, 10, 0.09);
+  border: transparent !important;
+}
+body section .form-check-input:checked {
+  background-color: #d53235 !important;
+  border-color: #d53235 !important;
+}
+body section .form-check-input:focus {
+  box-shadow: none !important;
+}
+body section .form-check-label {
+  cursor: pointer;
+  font-weight: 600;
+}
+body section button.btn-submit {
+  transition: 150ms;
+  width: 88px;
+  height: 88px;
+  border: 2px solid #ddd;
+  border-radius: 33px;
+  background-color: transparent;
+}
+body section button.btn-submit:hover {
+  color: #fff;
+  background-color: #d53235;
+  border-color: #d53235;
+}
+body section button.btn-submit svg {
+  width: 32px;
+}
+body section button.btn-submit svg:hover {
+  fill: #fff;
+}
+body section .btn-facebook,
+body section .btn-google,
+body section .btn-apple,
+body section .btn-xbox,
+body section .btn-ps4 {
+  height: 48px;
+  border-radius: 12.8px;
+}
+body section .btn-facebook svg,
+body section .btn-google svg,
+body section .btn-apple svg,
+body section .btn-xbox svg,
+body section .btn-ps4 svg {
+  width: 24px;
+}
+body section .btn-facebook {
+  background-color: rgba(9, 101, 222, 0.9058823529);
+}
+body section .btn-facebook:hover {
+  background-color: #0965de;
+  color: #fff;
+}
+body section .btn-google {
+  border: 2px solid #eee;
+  background-color: transparent;
+}
+body section .btn-google:hover {
+  background-color: #f8f8f8;
+  border-color: #ccc;
+}
+body section .btn-apple {
+  background-color: #000;
+}
+body section .btn-apple:hover {
+  background-color: #333;
+}
+body section .btn-xbox {
+  background-color: #076907;
+}
+body section .btn-xbox:hover {
+  background-color: #045204;
+}
+body section .btn-ps4 {
+  background-color: #00439c;
+}
+body section .btn-ps4:hover {
+  background-color: #003b8c;
+}
+body section a {
+  font-size: 12.64px;
+  color: #4a4a4a;
+  text-decoration: none;
+  font-weight: 800;
+}
+body section a:hover {
+  color: #000;
+}
+body footer div ul {
+  list-style: none;
+}
+body footer div ul a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  font-size: 10.24px;
+  transition: 100ms;
+}
+body footer div ul a:hover {
+  color: #fff;
+}
+body footer div ul a:first-of-type {
+  background-color: rgba(255, 255, 255, 0.1490196078);
+  border-radius: 4.8px;
+  color: #ccc;
+}
+body footer div ul a:first-of-type:hover {
+  background-color: rgba(255, 255, 255, 0.2745098039);
+}
+body footer div p {
+  text-align: center;
+  color: #aaa;
+  font-weight: 700;
+  text-wrap: wrap;
+  font-size: 8.9px;
+}
+
+@media screen and (min-width: 1040px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background: url(https://lolstatic-a.akamaihd.net/rso-authenticator-ui/0.68.48/assets/arcane_dsktp_centerAlignedCrd_BG_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  body section {
+    width: 30vw;
+    margin-top: 50px;
+  }
+  footer div ul a:first-of-type {
+    background-color: rgba(235, 235, 235, 0.2);
+    border-radius: 4.8px;
+    order: 10;
+  }
+  footer div p {
+    text-align: start !important;
+  }
 }/*# sourceMappingURL=login.css.map */

@@ -5,15 +5,17 @@
 }
 
 body {
+    display: grid;
+    background-repeat: no-repeat !important;
+    height: 100%;
     background: url(https://lolstatic-a.akamaihd.net/rso-authenticator-ui/0.68.48/assets/arcane_mobile_default_BG_2x.jpg);
+    box-shadow: inset 0px -104px 100px -55px rgba(0, 0, 0, 0.83);
 
-    header {
-        width: 100vw;
-    }
 
     section {
         background-color: #fff;
-        width: 85vw;
+        width: 95vw;
+        height: fit-content;
 
         form {
 
@@ -37,9 +39,8 @@ body {
             }
 
 
-
             label {
-                color: rgb(102, 102, 102);
+                color: #666;
                 font-weight: 800;
                 font-size: 12px;
                 outline: 0 !important;
@@ -47,6 +48,194 @@ body {
             }
         }
 
+        .form-check-input {
+            width: 34px;
+            height: 33px;
+            transition: 100ms;
+            background-color: rgba(10, 10, 10, 0.09); // usando rgba para o valor hexadecimal com transparência
+            border: transparent !important;
 
+            &:checked {
+                background-color: #d53235 !important;
+                border-color: #d53235 !important;
+            }
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+        .form-check-label {
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button.btn-submit {
+
+            transition: 150ms;
+            width: 88px;
+            height: 88px;
+            border: 2px solid #ddd;
+            border-radius: 33px;
+            background-color: transparent;
+
+            &:hover {
+                color: #fff;
+                background-color: #d53235;
+                border-color: #d53235;
+            }
+
+            svg {
+                width: 32px;
+
+                &:hover {
+                    fill: #fff;
+                }
+            }
+
+        }
+
+
+        .btn-facebook,
+        .btn-google,
+        .btn-apple,
+        .btn-xbox,
+        .btn-ps4 {
+            height: 48px;
+            border-radius: 12.8px;
+
+            svg {
+                width: 24px;
+            }
+        }
+
+        .btn-facebook {
+            background-color: #0965dee7;
+
+            &:hover {
+                background-color: #0965de;
+                color: #fff; // Se precisar mudar a cor do texto no hover
+            }
+        }
+
+        .btn-google {
+            border: 2px solid #eee;
+            background-color: transparent;
+
+            &:hover {
+                background-color: #f8f8f8; // Cor de fundo ao passar o mouse
+                border-color: #ccc; // Alterar a cor da borda no hover
+            }
+        }
+
+        .btn-apple {
+            background-color: #000;
+
+            &:hover {
+                background-color: #333; // Cor de fundo ao passar o mouse
+            }
+        }
+
+        .btn-xbox {
+            background-color: #076907;
+
+            &:hover {
+                background-color: #045204; // Cor de fundo ao passar o mouse
+            }
+        }
+
+        .btn-ps4 {
+            background-color: #00439c;
+
+            &:hover {
+                background-color: #003b8c; // Cor de fundo ao passar o mouse
+            }
+        }
+
+
+        a {
+            font-size: 12.64px;
+            color: #4a4a4a;
+            text-decoration: none;
+            font-weight: 800;
+
+            &:hover {
+                color: #000;
+            }
+        }
+
+    }
+
+
+    footer {
+        div {
+            ul {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #aaa;
+                    font-weight: 800;
+                    font-size: 10.24px;
+                    transition: 100ms;
+
+                    &:hover {
+                        color: #fff;
+                    }
+
+                    &:first-of-type {
+                        background-color: #ffffff26;
+                        border-radius: 4.8px;
+                        color: #ccc;
+
+                        &:hover {
+                            background-color: #ffffff46;
+                        }
+
+                    }
+                }
+            }
+
+            p {
+                text-align: center;
+                color: #aaa;
+                font-weight: 700;
+                text-wrap: wrap;
+                font-size: 8.9px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1040px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background: url(https://lolstatic-a.akamaihd.net/rso-authenticator-ui/0.68.48/assets/arcane_dsktp_centerAlignedCrd_BG_2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        section {
+            width: 30vw;
+            margin-top: 50px;
+        }
+    }
+
+    footer {
+        div {
+            ul {
+
+                a:first-of-type {
+                    background-color: rgba(235, 235, 235, 0.2);
+                    border-radius: 4.8px;
+                    order: 10;
+                }
+            }
+
+            p {
+                text-align: start !important;
+            }
+        }
     }
 }
