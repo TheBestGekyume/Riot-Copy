@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+
+
+  .navbar {
+    background-color: #000000; // Fundo preto para a navbar
+  }
+
+  .navbar-brand img {
+    width: 120px; // Ajuste o tamanho do logotipo
+  }
+
+  svg {
+    fill: white;
+  }
+
+  .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 20px;
+
+    &:hover {
+      color: #dddddd; // Cor ao passar o mouse
+    }
+  }
+
+  .btn-login {
+    background-color: #e52626; // Cor vermelha para o botão de login
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 1.6rem;
+
+    &:hover {
+      background-color: #c41f1f; // Cor ao passar o mouse
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+
+  header {
+    margin-block: 100px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient(275deg, rgba(10, 10, 10, 0) 0, rgba(10, 10, 10, .8) 120%);
+      z-index: -1;
+    }
+
+
+    .background-header {
+      position: absolute;
+      left: 0;
+      top: 0;
+      
+      width: 100%;
+      height: fit-content;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -2;
+
+
+      &-desk {
+        @extend .background-header;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+
+
+    img.valorant-logo {
+      width: 215px;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 1.688rem;
+      font-weight: 700;
+    }
+
+    h5{
+      color: rgba(249,249,249,.6);
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #ff3342 0%, #ff7d66 50%, #ff7d66 100%);
+      color: white;
+      border: 0 solid transparent;
+      border-radius: 18px;
+
+      &:hover {
+        color: white;
+        box-shadow: 0 10px 30px -10px #ff465440,
+          0 10px 30px -10px #ff465480,
+          0 10px 35px -10px #ff465480;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      span {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        padding: 8px;
+        border-radius: 50%;
+        background-color: #000;
+        filter: drop-shadow(0 4px 3px rgba(10, 10, 10, .4));
+
+        svg {
+          width: 16px;
+          height: auto;
+        }
+      }
+
+    }
+
+  }
+
+}
