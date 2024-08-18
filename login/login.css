@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://lolstatic-a.akamaihd.net/rso-authenticator-ui/0.68.48/assets/arcane_mobile_default_BG_2x.jpg);
+}
+body header {
+  width: 100vw;
+}
+body section {
+  background-color: #fff;
+  width: 85vw;
+}
+body section form h1 {
+  font-weight: 700;
+}
+body section form input.form-control {
+  box-shadow: none !important;
+  transition: background-color 250ms;
+}
+body section form input.form-control:focus {
+  border: 2px solid #111 !important;
+  background-color: transparent !important;
+}
+body section form input.form-control:hover {
+  background-color: rgba(0, 0, 0, 0.1529411765);
+}
+body section form label {
+  color: rgb(102, 102, 102);
+  font-weight: 800;
+  font-size: 12px;
+  outline: 0 !important;
+  border: 0 !important;
+}/*# sourceMappingURL=login.css.map */
