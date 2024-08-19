@@ -1,5 +1,3 @@
-https://github.com/TheBestGekyume/Steam-Copy
-
 Alunos:
 Gekyume Serna (contatogekyume@gmail.com)
 Leandro Lucas (leandrolucasgomesdesousa@gmail.com)
