@@ -112,3 +112,46 @@ body header .btn span svg {
   width: 16px;
   height: auto;
 }/*# sourceMappingURL=style.css.map */
+
+.hiring-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.hiring-section .info-box {
+  background-color: #c4bebe;
+  color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hiring-section .btn-explore {
+  background-color: #e52626; 
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.hiring-section .btn-explore:hover {
+  background-color: #c41f1f;
+}
+
+.hiring-section .text-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.hiring-section .text-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #000000;
+}
